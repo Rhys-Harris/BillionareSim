@@ -5,9 +5,26 @@
 #include "./config.h"
 #include "./Game.h"
 
+#define MANUAL_BUTTON_GAP 10
+#define MANUAL_BUTTON_SIZE (LEFT_BAR_WIDTH-MANUAL_BUTTON_GAP*2)
+#define MANUAL_BUTTON_Y 40
+#define MANUAL_BUTTON_X MANUAL_BUTTON_GAP
+
 void update(Game *game) {
-	// TODO: Get mouse pos
-	// TODO: Manual income click logic
+	// Get mouse position
+	const int mouseX = GetMouseX();
+	const int mouseY = GetMouseY();
+
+	// Manual income click logic
+	if (
+		MANUAL_BUTTON_X <= mouseX &&
+		mouseX <= MANUAL_BUTTON_X+MANUAL_BUTTON_SIZE &&
+		MANUAL_BUTTON_Y <= mouseY &&
+		mouseY <= MANUAL_BUTTON_Y+MANUAL_BUTTON_SIZE
+	) {
+		// TODO: Get money
+	}
+
 	// TODO: Tower buy click
 }
 
