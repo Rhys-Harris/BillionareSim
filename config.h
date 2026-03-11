@@ -1,6 +1,8 @@
 #ifndef _CONFIG_H_
 #define _CONFIG_H_
 
+#include "./Rect.h"
+
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 400
 
@@ -11,5 +13,6 @@
 #define MANUAL_BUTTON_Y 40
 #define MANUAL_BUTTON_X MANUAL_BUTTON_GAP
 
+#define MANUAL_BUTTON_RECT ((Rect){MANUAL_BUTTON_X, MANUAL_BUTTON_Y, MANUAL_BUTTON_SIZE, MANUAL_BUTTON_SIZE})
 
 #endif
