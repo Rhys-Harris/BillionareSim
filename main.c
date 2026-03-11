@@ -6,11 +6,18 @@
 #include "./Game.h"
 
 void update(Game *game) {
-
+	// TODO: Get mouse pos
+	// TODO: Manual income click logic
+	// TODO: Tower buy click
 }
 
 void draw(Game *game) {
 	BeginDrawing();
+
+	// TODO: Draw money
+	// TODO: Draw manual income button
+	// TODO: Draw tower buttons
+
 	EndDrawing();
 }
 
@@ -34,6 +41,8 @@ int main() {
 	}
 
 	CloseWindow();
+
+	printf("Finished\n");
 
 	return 0;
 }

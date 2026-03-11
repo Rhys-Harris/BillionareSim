@@ -4,4 +4,7 @@
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 400
 
+#define LEFT_BAR_WIDTH 100
+#define MANUAL_BUTTON_SIZE (LEFT_BAR_WIDTH-20)
+
 #endif
