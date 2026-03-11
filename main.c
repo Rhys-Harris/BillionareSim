@@ -27,6 +27,8 @@ int main() {
 
 	Game game;
 
+	gameReset(&game);
+
 	while (!WindowShouldClose()) {
 		tick(&game);
 	}
